@@ -17,7 +17,6 @@
     $url = "https://api.openweathermap.org/data/3.0/onecall?lat=".$lat."&lon=".$lon."&exclude=hourly,daily&units=metric&appid=6df78e473d45b3ce773f87118d6523a3";
     echo getWeatherInfo($url);
 
-
     function getWeatherInfo($url) {
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_URL, $url);

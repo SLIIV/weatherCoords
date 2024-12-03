@@ -29,9 +29,6 @@ $('#weatherForm').on('submit', function (e) {
                 $('#currentTemp').html(response.current.temp + "℃");
                 $('#weatherAlert').show();
             }
-            
-                
-        
         }
     });
 });
